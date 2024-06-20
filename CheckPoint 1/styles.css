@@ -1,0 +1,167 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100vw;
+  height: 30vh;
+  background-image: url(./Assets/fondo.jpg);
+  background-size: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  padding: 10px;
+  gap: 15px;
+}
+h1 {
+  padding-bottom: 40px;
+  padding-left: 15px;
+  color: white;
+}
+.navbar a {
+  padding: 3px;
+  color: white;
+}
+.navbar a[href="#"] {
+  border: solid 2px;
+  border-radius: 8px;
+}
+h2 {
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: black;
+}
+.subnav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 0px 30px 0px;
+}
+.subnav a {
+  padding: 3px;
+  color: white;
+  font-size: 10px;
+}
+.subnav a[href="#"] {
+  border: solid 2px;
+  border-radius: 8px;
+  background-color: rgb(41, 40, 40);
+}
+
+.imgpiz {
+  width: 65%;
+}
+section p {
+  color: white;
+}
+.boton {
+  width: 35px;
+  font-weight: 700;
+  height: 25px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+.productos {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+.disponible {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.boton {
+  background-color: red;
+  color: white;
+  border: red;
+  border-radius: 10px;
+}
+footer {
+  height: 10vh;
+  background-color: black;
+  border-top: 2px solid white;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 9px;
+  color: white;
+}
+.table tr,
+th,
+td {
+  font-size: 14px;
+  color: white;
+  border: 1px white solid;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: center;
+}
+.tabla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.lista {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .productos {
+    width: 40vw;
+  }
+  .disponible {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  footer {
+    justify-content: space-evenly;
+  }
+  .tabla p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .tabla {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  .productos {
+    width: 20vw;
+  }
+  .info {
+    gap: 5vw;
+  }
+}
